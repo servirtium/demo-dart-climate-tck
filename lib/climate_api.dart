@@ -10,7 +10,11 @@ import 'package:xml/xml.dart' as xml;
 class ClimateApi {
   static const climateApiUrl = 'http://climatedataapi.worldbank.org';
 
-  static Future<double> getAverageAnnualRainfall({
+  final String apiUrl;
+
+  ClimateApi({this.apiUrl});
+
+  Future<double> getAverageAnnualRainfall({
     int fromYear,
     int toYear,
     List<String> countryISOs,
@@ -19,7 +23,7 @@ class ClimateApi {
 
     for (String countryISO in countryISOs) {
       String url =
-          '$climateApiUrl/climateweb/rest/v1/country/annualavg/pr/$fromYear/$toYear/$countryISO.xml';
+          '$apiUrl/climateweb/rest/v1/country/annualavg/pr/$fromYear/$toYear/$countryISO.xml';
 
       try {
         var response = await http.get(url);
