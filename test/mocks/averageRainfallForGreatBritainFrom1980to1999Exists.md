@@ -3,34 +3,37 @@
 ### Request headers recorded for playback:
 
 ```
-Host: climatedataapi.worldbank.org
-User-Agent: Servirtium-Testing
-Accept-Encoding: gzip, deflate
-Accept: */*
-Connection: keep-alive
+user-agent: Dart/2.8 (dart:io)
+accept-encoding: gzip
+content-length: 0
+host: localhost:61417
 ```
 
 ### Request body recorded for playback ():
 
 ```
 
-
 ```
 
 ### Response headers recorded for playback:
 
 ```
-Content-Type: application/xml
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Headers: X-Requested-With
-Access-Control-Allow-Methods: GET
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Content-Security-Policy: default-src 'self'
-Cache-Control: no-cache
-Secure: true
-HttpOnly: true
-Transfer-Encoding: chunked
+set-cookie: AWSALB=F9xSkXvNv4nI/63FlvFpx0Gs1SpnoUnLiwFTZ8ioJyvPSyg9b1mNRR860g0RnSZgaQuiJvkDuu/EglH507naE3X3yQA9KPvbfeOLY9Yz41wAcsyBiJbJQ4rFmzgx; Expires=Mon, 02 Mar 2020 19:00:33 GMT; Path=/,AWSALBCORS=F9xSkXvNv4nI/63FlvFpx0Gs1SpnoUnLiwFTZ8ioJyvPSyg9b1mNRR860g0RnSZgaQuiJvkDuu/EglH507naE3X3yQA9KPvbfeOLY9Yz41wAcsyBiJbJQ4rFmzgx; Expires=Mon, 02 Mar 2020 19:00:33 GMT; Path=/; SameSite=None; Secure,TS01c35ec3=010f7a2ab0eef3300326f2538bbed4b84aa75b61f604262adc65196fbb8fa3b1bc1aae84eaa73fd9a6494bf5a2ca590b93cbdb814d; Path=/,climatedataapi.cookie=2631971082.33060.0000; path=/; Httponly,climatedataapi_ext.cookie=2543955978.20480.0000; path=/; Httponly,TS0137860d=017189f9474c48f979d329c75e96eaa1a421f505419bb93fac95caaf9b6aca5f67446ad3d270f6ed6f950aeae861c439ec1e289e27f43ffc28be652fb5dee4f9f93e84c329d364c545b6a12d04412d94ad0987f73f349d80d38cd2e9ff9d5ffde90acd25de59941951c7bdde1347729902a56059481a9422d5cdbc05168ed1b4b4b75181a2; Path=/
+cache-control: no-cache,no-store
+transfer-encoding: chunked
+date: Mon, 24 Feb 2020 19:00:33 GMT
+access-control-allow-origin: *
+secure: true
+strict-transport-security: max-age=0,max-age=31536000; includeSubDomains
+content-type: application/xml
+pragma: no-cache
+x-xss-protection: 1; mode=block,1; mode=block
+access-control-allow-headers: X-Requested-With
+access-control-allow-methods: GET
+x-frame-options: DENY,deny
+x-content-type-options: nosniff,nosniff
+content-security-policy: default-src 'self'
+httponly: true
 ```
 
 ### Response body recorded for playback (200: application/xml):

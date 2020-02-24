@@ -7,6 +7,7 @@ import 'dart:io';
 import 'dart:isolate';
 
 import 'package:climate_data_api/servirtium/http_listener.dart';
+import 'package:climate_data_api/servirtium/interaction.dart';
 import 'package:climate_data_api/servirtium/simple_mocks_parser.dart';
 
 class PlaybackHttpListener implements HttpListener {
@@ -30,9 +31,10 @@ class PlaybackHttpListener implements HttpListener {
     int n = 0;
 
     _subscription = server.listen((HttpRequest request) async {
-      request.response.write(
-        _parser.getResponseByMethodName(_methodName)[n],
-      );
+      Interaction interaction =
+          _parser.getInteractionsByMethodName(_methodName)[n];
+
+      request.response.write(interaction.responseBody);
       await request.response.close();
 
       n++;
@@ -48,6 +50,7 @@ class PlaybackHttpListener implements HttpListener {
   Future stop() async {
     await _subscription.cancel();
     _subscription = null;
+    
     await _messageSubscription.cancel();
     _messageSubscription = null;
   }
