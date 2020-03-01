@@ -3,7 +3,6 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'package:climate_data_api/climate_api.dart';
-import 'package:isolate/isolate_runner.dart';
 import 'package:servirtium/servirtium.dart';
 import 'package:test/test.dart';
 
@@ -47,7 +46,8 @@ void main() {
     test(
       AVERAGE_RAINFALL_FOR_FRANCE_FROM_1980_TO_1999_EXISTS,
       () async {
-        handler.changeMethod(AVERAGE_RAINFALL_FOR_FRANCE_FROM_1980_TO_1999_EXISTS);
+        handler
+            .changeMethod(AVERAGE_RAINFALL_FOR_FRANCE_FROM_1980_TO_1999_EXISTS);
 
         await climateApiTest
             .averageRainfallForFranceFrom1980To1999Exists(climateApi);
@@ -57,7 +57,8 @@ void main() {
     test(
       AVERAGE_RAINFALL_FOR_EGYPT_FROM_1980_TO_1999_EXISTS,
       () async {
-        handler.changeMethod(AVERAGE_RAINFALL_FOR_EGYPT_FROM_1980_TO_1999_EXISTS);
+        handler
+            .changeMethod(AVERAGE_RAINFALL_FOR_EGYPT_FROM_1980_TO_1999_EXISTS);
 
         await climateApiTest
             .averageRainfallForEgyptFrom1980To1999Exists(climateApi);
