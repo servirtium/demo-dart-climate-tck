@@ -7,6 +7,12 @@ brew tap dart-lang/dart
 brew install dart
 ```
 
+## Getting the Servirtium library
+
+```
+# TODO
+```
+
 ## Running the example
 
 ```
