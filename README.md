@@ -1,6 +1,6 @@
-# Climate Data demo app for Servirtium-Dart 
+# Climate data demo app for Servirtium-Dart 
 
-## Installing dart
+## Installing Dart
 
 ```
 brew tap dart-lang/dart
@@ -8,6 +8,9 @@ brew install dart
 ```
 
 ## Getting the Servirtium library
+
+The Servirtium library is maintained in a different repo [servirtium/servirtium-dart](https://github.com/servirtium/servirtium-dart) 
+and has not yet been pushed to pub.dev (package-land for Dart/Flutter)
 
 ```
 # TODO
